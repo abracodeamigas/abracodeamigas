@@ -1,0 +1,119 @@
+/* Definição de Cores e Fontes */
+:root {
+    --rosa-primario: #E62565; /* Rosa dos botões e do logo */
+    --rosa-hover: #C2185B;    /* Rosa mais escuro ao passar o rato */
+    --creme-fundo: #FDF8E8;   /* Fundo da parte de baixo */
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --dourado: #D4AF37;       /* Linha dourada */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--creme-fundo);
+    color: var(--preto);
+    text-align: center;
+}
+
+/* O fundo do topo (imagem desfocada) */
+.topo-fundo {
+    height: 200px;
+    /* CAMINHO ATUALIZADO PARA A CAPA */
+    background-image: url('assets/capa_Link BIO ADA.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid var(--dourado); /* A risca dourada */
+}
+
+/* Onde fica o conteúdo principal */
+.container {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+/* O cartão branco */
+.cartao {
+    background-color: var(--branco);
+    border-radius: 30px; /* Cantos arredondados */
+    padding: 0 20px 40px 20px;
+    margin-top: -60px; /* Faz o cartão subir por cima do topo */
+    max-width: 400px; /* Largura máxima estilo telemóvel */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+/* Estilo do Logo */
+.logo-container {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: -60px; /* Puxa o logo para cima */
+    /* Removi a borda branca para ficar igual ao design original */
+}
+
+/* Tipografia */
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.divisor {
+    width: 50px;
+    height: 2px;
+    background-color: var(--preto);
+    border: none;
+    margin: 10px auto;
+}
+
+.tags {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.botao-link {
+    display: block;
+    background-color: var(--rosa-primario);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 50px; /* Botão bem redondo */
+    font-weight: 600;
+    text-transform: uppercase; /* Letras maiúsculas */
+    letter-spacing: 1px;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 0.8rem;
+}
+
+.botao-link:hover {
+    background-color: var(--rosa-hover);
+    transform: scale(1.02); /* Cresce um pouquinho ao passar o rato */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
